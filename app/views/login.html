@@ -1,0 +1,72 @@
+<div class="container"
+     style="max-width: 100%; width: 100%; background-color: #233572; padding-top: 0px; color: #333;">
+
+  <div ng-show="ready">
+
+    <div class="row" style="max-width: 800px; margin: auto;float:none; background: #fff; padding-bottom: 80px;">
+      <div class="col-xs-12">
+        <div id="logo-container">
+          <img src="img/jsaa_logo.png" alt="logo" height="80" style="margin-bottom: 10px;">
+        </div>
+        <form name="forms.login">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-8 form-box">
+            <div class="col-xs-12">
+              <md-input-container>
+                <label for="userid">User ID</label>
+                <input my-enter="login()" required md-no-asterisk tabindex="1" ng-disabled="uid"
+                       next-focus
+                       ng-model="user.Login" id="userid" placeholder="">
+              </md-input-container>
+            </div>
+
+            <div class="col-xs-12">
+              <md-input-container>
+                <label for="password">Password</label>
+                <input my-enter="login()" minlength="6" md-no-asterisk
+                       ng-model="user.Password" type="password" id="password"
+                       placeholder="">
+              </md-input-container>
+            </div>
+
+            <div class="col-xs-12">
+              <md-button class="md-primary md-raised"
+                         ng-click="login()"
+                         style="width: 200px; margin: auto;">Login
+              </md-button>
+            </div>
+
+            <div style="clear: both; height: 20px;"></div>
+
+            <div class="col-xs-6">
+              <a ng-href="#/register">
+                <p style="text-align: center; font-weight: bold; margin-top:15px;"
+                   class="main-color-text">Apply
+                  Here</p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a ng-href="#/forgot-password">
+                <p style="text-align: center; font-weight: bold; margin-top:15px;"
+                   class="main-color-text">Forgot Password?</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-2"></div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row" ng-show="!ready">
+    <div class="col-xs-12">
+      Loading
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css"/>
+    <link href="styles/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="styles/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="styles/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="styles/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <link href="styles/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="styles/angular-simple-sidebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/angular-circular-slider.css">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link href="styles/datepicker.css" rel="stylesheet">
+    <link href="styles/angular-material.min.css" rel="stylesheet">
+    <link href="styles/angular-material.layouts.min.css" rel="stylesheet">
+    <link href="styles/angular-material.layouts-attributes.min.css" rel="stylesheet">
+    <link href="styles/intro.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/pure-table.css">
+    <!-- endbuild -->
+</head>
+<body ng-init="$root.isMobile()" ng-app="doctorsChoicePharmacyApp"
+      ng-class="(fullBodyBg == true) ? 'full-body-bg nav-md' : 'nav-md'"
+      style="background: #fff;">
+<div ng-show="$root.isLoading" class="black-overlay"></div>
+<div ng-cloak
+     ng-class="($root.mobileActive == true) ? 'mobile-active container body': 'container body'">
+    <div class="main_container">
+
+        <!-- top navigation -->
+        <div class="top_nav" ng-show="loggedIn">
+
+            <div class="nav_menu">
+                <img style="float: left;max-height: 57px;margin-left: 100px;" src="img/jsaa_logo.png" alt="logo"
+                     height="80">
+                <nav>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li uib-dropdown class="dropdown">
+                            <a uib-dropdown-toggle href="javascript:;" class="user-profile dropdown-toggle"
+                               data-toggle="dropdown">
+
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul uib-dropdown-menu class="dropdown-menu">
+                                <li ng-click="$root.logOut()">
+                                    <a href="./#!/">
+                                        <i class="fa fa-sign-out pull-right"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div ng-show="$root.isLoading">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="loading-text" ng-bind="$root.loadingText"></div>
+        </div>
+
+        <div ng-if="$root.mobileActive" style="height: 80px; width: 100%; opacity: 0; background:transparent;"></div>
+
+        <div id="view" ng-view="" class="other" role="main">
+            <div ng-show="$root.isLoading" class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="right_col" role="main">
+            </div>
+        </div>
+
+        <!-- ============= MOBILE VIEW ============= -->
+
+        <div id="bottom-nav" ng-show="$root.mobileActive && loggedIn" ng-init="$root.mobileView = 'initial'">
+            <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+                <div class="row" id="bottomNav">
+                    <div my-touchend="$root.mobileView = 'deployments'" ng-click="$root.mobileView = 'initial'"
+                         class="col-xs-3 text-center nav-cell">
+                        <i class="glyphicon glyphicon-circle-arrow-down"></i><br>Initial List Item
+                    </div>
+                    <div my-touchend="$root.mobileView = 'generator'" ng-click="$root.mobileView = 'generator'"
+                         class="col-xs-3 text-center nav-cell">
+                        <i class="glyphicon glyphicon-circle-arrow-down"></i><br>List Item 2
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- /page content -->
+</div>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-dynamic-number/release/dynamic-number.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/sanitize.js"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/bootstrap-ui.js"></script>
+<script src="scripts/signature-pad.js"></script>
+<script src="scripts/ng-file-upload.min.js"></script>
+<script src="scripts/intro.js"></script>
+<script src="scripts/angular-intro.js"></script>
+<script src="scripts/angular-drag-drop.min.js?v=2"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+<script src="scripts/angular-circular-slider.js"></script>
+<script src="http://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+<script src="scripts/angular-simple-sidebar.min.js"></script>
+<script src="scripts/pdfmake.js"></script>
+<script src="scripts/html2canvas.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/controllers/register.js"></script>
+<script src="scripts/controllers/helper-dialog.js"></script>
+<script src="scripts/controllers/admin-dashboard.js"></script>
+<script src="scripts/controllers/forgot-password.js"></script>
+<script src="scripts/controllers/user-dashboard.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/modal.js"></script>
+<script src="scripts/controllers/controller-gateway.js"></script>
+<script src="scripts/moment.js"></script>
+<script src="scripts/moment-timezone-with-data.min.js"></script>
+<script src="scripts/moment-duration-format.min.js"></script>
+<script src="scripts/helper.js"></script>
+<!-- endbuild -->
+</body>
+</html>
