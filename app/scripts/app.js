@@ -107,11 +107,11 @@ angular
 
             // GLOBAL FUNCTIONS
             if (window.location.href.indexOf('ammoconnect.com') > -1) {
-                $rootScope.APIEndpoint = "http://192.169.217.115:8095/";
+                $rootScope.APIEndpoint = "http://192.169.217.115:8096/";
                 $rootScope.APIDownloadFolder = 'http://development.gazellia.com/~developer/ammoconnect/server/';
             } else {
-                $rootScope.APIEndpoint = "http://localhost:8095";
-                $rootScope.APIDownloadFolder = 'http://localhost:8095/';
+                $rootScope.APIEndpoint = "http://localhost:8096";
+                $rootScope.APIDownloadFolder = 'http://localhost:8096/';
             }
 
             $rootScope.headers = {
