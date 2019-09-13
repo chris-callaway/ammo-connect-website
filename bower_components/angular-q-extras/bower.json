@@ -1,0 +1,21 @@
+{
+  "name": "angular-q-extras",
+  "version": "1.1.0",
+  "description": "Angular $q decorator",
+  "authors": [
+    "niqdev"
+  ],
+  "main": [
+    "dist/angular-q-extras.js"
+  ],
+  "ignore": [
+    "src",
+    "test",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "**/.*"
+  ],
+  "dependencies": {
+    "angular": ">=1.2"
+  }
+}

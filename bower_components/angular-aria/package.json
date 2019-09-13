@@ -1,0 +1,56 @@
+{
+  "_from": "angular-aria@1.4.0",
+  "_id": "angular-aria@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-2tiFrvPfGmRO092CS7hTprCYu3M=",
+  "_location": "/angular-aria",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "angular-aria@1.4.0",
+    "name": "angular-aria",
+    "escapedName": "angular-aria",
+    "rawSpec": "1.4.0",
+    "saveSpec": null,
+    "fetchSpec": "1.4.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-aria/-/angular-aria-1.4.0.tgz",
+  "_shasum": "dad885aef3df1a644ed3dd824bb853a6b098bb73",
+  "_spec": "angular-aria@1.4.0",
+  "_where": "/Users/user/Desktop/DoctorsChoicePharmacy",
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "AngularJS module for making accessibility easy",
+  "homepage": "http://angularjs.org",
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "accessibility",
+    "a11y",
+    "client-side"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "angular-aria",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.0"
+}

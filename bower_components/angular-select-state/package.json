@@ -1,0 +1,55 @@
+{
+  "_from": "angular-select-state",
+  "_id": "angular-select-state@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha1-4U7dL9oebaADmuyWNJh4Htatyqg=",
+  "_location": "/angular-select-state",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-select-state",
+    "name": "angular-select-state",
+    "escapedName": "angular-select-state",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-select-state/-/angular-select-state-0.0.5.tgz",
+  "_shasum": "e14edd2fda1e6da0039aec963498781ed6adcaa8",
+  "_spec": "angular-select-state",
+  "_where": "/Users/user/Desktop/Projects/DrugSearch",
+  "author": {
+    "name": "Mitch Winn"
+  },
+  "bugs": {
+    "url": "https://github.com/mitchwinn/angular-select-state/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "An AngularJS module that generates a list of US states using the HTML select tag.",
+  "homepage": "https://github.com/mitchwinn/angular-select-state#readme",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "states",
+    "united",
+    "states",
+    "state-select"
+  ],
+  "license": "MIT",
+  "main": "./lib/angular-select-state.js",
+  "name": "angular-select-state",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchwinn/angular-select-state.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.5"
+}
