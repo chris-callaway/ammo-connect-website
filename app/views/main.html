@@ -1,11 +1,55 @@
-<div class="container"
-     style="max-width: 100%; width: 100%; background-color: #333; padding-top: 0px; color: #333;">
+<style>
+#list{
+	padding:0px;
+	margin:0px;
+	min-height:inherit !important;}
 
-    <div class="row"
-         style="max-width: 1200px; margin: auto;float:none; padding-top: 40px;background: #fff; padding-bottom: 80px;">
-        <div class="col-xs-12">
+.wrap-sticky{
+	height:180px !important;}
+</style>
+<section id="list" class="home">
+    <div class="home-bg-overlay"></div>
+    <header class="wrap-sticky"> 
+      <div class="container"> 
+        <nav class="navbar navbar-default navbar-sticky navbar-scrollspy bootsnav theme-menu" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+          <div class="container"> 
+            
+            <!-- Nav header -->
+            <div class="navbar-header"> 
+              <!-- Mobile Menu icon -->
+              <button type="button" class="navbar-toggle animated zoomIn" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
+              <!-- Logo --> 
+              <a class="navbar-brand" href="#brand"><img src="images/logo.png" class="logo" alt="Ammo Connect"></a> </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse"  id="navbar-menu">
+              <ul class="nav navbar-nav navbar-right single-page">
+                <li class="scroll"><a href="#/">Home</a></li>
+                <li class="scroll"><a href="#/#about">About Us</a></li>
+                <li class="active scroll"><a href="#/#list">List Search</a></li>
+                <li class="scroll"><a href="#/#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+  </section>
 
-            <div style="float: left;">
+<section class="iner_search">
+<div class="container">
+      <div class="section-title" style="margin-bottom:50px;">
+        <h3>List Search</h3>
+        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+      </div>
+    </div>
+    
+<div class="container">
+ <div class="col-md-12">
+
+			<div class="read_search">
+            <div class="table_wrap_search">
                 <label style="display: block;">Retailer</label>
                 <select class="form-control" ng-model="filter_retailer"
                         style="max-width: 250px; display: inline-block;">
@@ -14,8 +58,8 @@
                 </select>
             </div>
 
-            <div style="float: left; margin-left: 20px;">
-                <label style="display: block;">Manufacturer</label>
+            <div class="table_wrap_search">
+                <label style="display: block;">Manufacturer </label>
                 <select class="form-control" ng-model="filter_manufacturer"
                         style="max-width: 250px; display: inline-block;">
                     <option selected="selected" value="">All</option>
@@ -35,7 +79,7 @@
                 </select>
             </div>
 
-            <div style="float: left; margin-left: 20px;">
+            <div class="table_wrap_search">
                 <label style="display: block;">Rounds</label>
                 <select class="form-control" ng-model="filter_rounds"
                         style="max-width: 250px; display: inline-block;">
@@ -57,7 +101,7 @@
                 </select>
             </div>
 
-            <div style="float: left; margin-left: 20px;">
+            <div class="table_wrap_search">
                 <label style="display: block;">Casing</label>
                 <select class="form-control" ng-model="filter_casing" style="max-width: 250px; display: inline-block;">
                     <option selected="selected" value="">All</option>
@@ -66,41 +110,44 @@
                 </select>
             </div>
 
-            <div style="float: left; margin-left: 20px;">
+            <div class="table_wrap_search">
                 <label style="display: block;">Type</label>
                 <select class="form-control" ng-model="filter_type" style="max-width: 250px; display: inline-block;">
                     <option selected="selected" value="">All</option>
                     <option value="Rifle">Rifle</option>
                 </select>
             </div>
+			
+			</div>
 
             <div style="clear: both; height: 40px;"></div>
             <table class="table pure-table table-hover">
                 <thead>
-                <th style="cursor: pointer;" ng-click="orderByField='retailer'; reverseSort = !reverseSort">Retailer
+                <th class="set_bg_bl" style="cursor: pointer; width:17%;" ng-click="orderByField='retailer'; reverseSort = !reverseSort">Retailer
                 </th>
-                <th ng-click="orderByField='manufacturer'; reverseSort = !reverseSort">Manufacturer</th>
-                <th ng-click="orderByField='type'; reverseSort = !reverseSort">Type</th>
-                <th ng-click="orderByField='caliber'; reverseSort = !reverseSort">Caliber</th>
-                <th ng-click="orderByField='rounds'; reverseSort = !reverseSort">Rounds</th>
-                <th ng-click="orderByField='casing'; reverseSort = !reverseSort">Casing</th>
-                <th ng-click="orderByField='price'; reverseSort = !reverseSort">Price</th>
-                <th ng-click="orderByField='url'; reverseSort = !reverseSort">URL</th>
+                <th class="set_bg_b2" style="width:17%;" ng-click="orderByField='manufacturer'; reverseSort = !reverseSort">Manufacturer</th>
+                <th class="set_bg_b2" class="set_bg_b2" ng-click="orderByField='type'; reverseSort = !reverseSort">Type</th>
+                <th class="set_bg_b2" ng-click="orderByField='caliber'; reverseSort = !reverseSort">Caliber</th>
+                <th class="set_bg_b2" ng-click="orderByField='rounds'; reverseSort = !reverseSort">Rounds</th>
+                <th class="set_bg_b2" ng-click="orderByField='casing'; reverseSort = !reverseSort">Casing</th>
+                <th class="set_bg_b2" ng-click="orderByField='price'; reverseSort = !reverseSort">Price</th>
+                <th class="set_bg_b3  text-center" ng-click="orderByField='url'; reverseSort = !reverseSort">URL</th>
                 </thead>
                 <tbody>
                 <tr ng-repeat="item in entries | filter: {retailer: filter_retailer, manufacturer:filter_manufacturer, type: filter_type, rounds: filter_rounds, casing: filter_casing} | orderBy:orderByField:reverseSort">
-                    <td>{{item.retailer}}</td>
-                    <td>{{item.manufacturer}}</td>
-                    <td>{{item.type}}</td>
-                    <td>{{item.caliber}}</td>
-                    <td>{{item.rounds}}</td>
-                    <td>{{item.casing}}</td>
-                    <td>${{item.price}}</td>
-                    <td><a target="_blank" href="{{item.url}}">Visit Product</a></td>
+                    <td class="set_bg_cl">{{item.retailer}}</td>
+                    <td class="set_bg_c2">{{item.manufacturer}}</td>
+                    <td class="set_bg_c2">{{item.type}}</td>
+                    <td class="set_bg_c2">{{item.caliber}}</td>
+                    <td class="set_bg_c2">{{item.rounds}}</td>
+                    <td class="set_bg_c2">{{item.casing}}</td>
+                    <td class="set_bg_c2">${{item.price}}</td>
+                    <td class="set_bg_c3"><a target="_blank" class="bt_rg" href="{{item.url}}">Visit Product</a></td>
                 </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="col-xs-12" style="height: 400px;">&nbsp;</div>
-    </div>
-</div>
+        
+ </div>
+</div>    
+</section>
+

@@ -38,10 +38,16 @@ angular
     })
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
-            .when('/', {
+            .when('/main', {
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl',
                 controllerAs: 'MainCtrl',
+                cache: false
+            })
+			.when('/', {
+                templateUrl: 'views/home.html',
+                controller: 'HomeCtrl',
+                controllerAs: 'HomeCtrl',
                 cache: false
             })
             .when('/login', {
@@ -74,6 +80,7 @@ angular
                 controllerAs: 'UserDashboardCtrl',
                 cache: false
             })
+			
             .otherwise({
                 redirectTo: '/'
             });
@@ -360,9 +367,10 @@ angular
 
                     // re-route user to root if not logged in
 
-                    if (url != '' && url != '/' && url != '/#' && url != '/register' && url != '/login' && url != '/forgot-password' && url != '/search' && !localStorage.getItem('user')) {
-                        alert('Log in to visit this page ' + url);
-                        $location.path('/login');
+                    if (url != '' && url != '/' && url != '/#' && url != '/register' && url != '/login' && url != '/forgot-password' && url != '/main' && url != '/#about' && !localStorage.getItem('user')) {
+                        //alert('Log in to visit this page ' + url);
+                        $location.path('/');
+						//$location.path('/login');
                     }
                 });
 
