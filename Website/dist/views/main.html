@@ -1,0 +1,101 @@
+<div class="container" style="max-width: 100%; width: 100%; background-color: #333; padding-top: 0px; color: #333">
+
+    <div class="row" style="max-width: 1200px; margin: auto;float:none; padding-top: 40px;background: #fff; padding-bottom: 80px">
+        <div class="col-xs-12">
+
+            <div style="float: left">
+                <label style="display: block">Retailer</label>
+                <select class="form-control" ng-model="filter_retailer" style="max-width: 250px; display: inline-block">
+                    <option selected="selected" value="">All</option>
+                    <option value="Carolinamunitions">Carolinamunitions</option>
+                </select>
+            </div>
+
+            <div style="float: left; margin-left: 20px">
+                <label style="display: block">Manufacturer</label>
+                <select class="form-control" ng-model="filter_manufacturer" style="max-width: 250px; display: inline-block">
+                    <option selected="selected" value="">All</option>
+                    <option value="Aguila">Aguila</option>
+                    <option value="Barnes Bullets">Barnes Bullets</option>
+                    <option value="Colt Ammo">Colt Ammo</option>
+                    <option value="Federal">Federal</option>
+                    <option value="Fiocchi">Fiocchi</option>
+                    <option value="Frontier Cartridge">Frontier Cartridge</option>
+                    <option value="Hornady">Hornady</option>
+                    <option value="Nosler">Nosler</option>
+                    <option value="PMC">PMC</option>
+                    <option value="Remington Ammunition">Remington Ammunition</option>
+                    <option value="Sig Sauer">Sig Sauer</option>
+                    <option value="Tulammo">Tulammo</option>
+                    <option value="Winchester Ammo">Winchester Ammo</option>
+                </select>
+            </div>
+
+            <div style="float: left; margin-left: 20px">
+                <label style="display: block">Rounds</label>
+                <select class="form-control" ng-model="filter_rounds" style="max-width: 250px; display: inline-block">
+                    <option selected="selected" value="">All</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="180">180</option>
+                    <option value="200">200</option>
+                    <option value="400">400</option>
+                    <option value="450">450</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+                    <option value="800">800</option>
+                    <option value="900">900</option>
+                    <option value="1000">1000</option>
+                </select>
+            </div>
+
+            <div style="float: left; margin-left: 20px">
+                <label style="display: block">Casing</label>
+                <select class="form-control" ng-model="filter_casing" style="max-width: 250px; display: inline-block">
+                    <option selected="selected" value="">All</option>
+                    <option value="brass">Brass</option>
+                    <option value="steel">Steel</option>
+                </select>
+            </div>
+
+            <div style="float: left; margin-left: 20px">
+                <label style="display: block">Type</label>
+                <select class="form-control" ng-model="filter_type" style="max-width: 250px; display: inline-block">
+                    <option selected="selected" value="">All</option>
+                    <option value="Rifle">Rifle</option>
+                </select>
+            </div>
+
+            <div style="clear: both; height: 40px"></div>
+            <table class="table pure-table table-hover">
+                <thead>
+                <th style="cursor: pointer" ng-click="orderByField='retailer'; reverseSort = !reverseSort">Retailer
+                </th>
+                <th ng-click="orderByField='manufacturer'; reverseSort = !reverseSort">Manufacturer</th>
+                <th ng-click="orderByField='type'; reverseSort = !reverseSort">Type</th>
+                <th ng-click="orderByField='caliber'; reverseSort = !reverseSort">Caliber</th>
+                <th ng-click="orderByField='rounds'; reverseSort = !reverseSort">Rounds</th>
+                <th ng-click="orderByField='casing'; reverseSort = !reverseSort">Casing</th>
+                <th ng-click="orderByField='price'; reverseSort = !reverseSort">Price</th>
+                <th ng-click="orderByField='url'; reverseSort = !reverseSort">URL</th>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in entries | filter: {retailer: filter_retailer, manufacturer:filter_manufacturer, type: filter_type, rounds: filter_rounds, casing: filter_casing} | orderBy:orderByField:reverseSort">
+                    <td>{{item.retailer}}</td>
+                    <td>{{item.manufacturer}}</td>
+                    <td>{{item.type}}</td>
+                    <td>{{item.caliber}}</td>
+                    <td>{{item.rounds}}</td>
+                    <td>{{item.casing}}</td>
+                    <td>${{item.price}}</td>
+                    <td><a target="_blank" href="{{item.url}}">Visit Product</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-12" style="height: 400px">&nbsp;</div>
+    </div>
+</div>

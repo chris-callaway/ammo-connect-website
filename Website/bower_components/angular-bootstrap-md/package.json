@@ -1,0 +1,79 @@
+{
+  "_from": "angular-bootstrap-md",
+  "_id": "angular-bootstrap-md@5.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-AW6vWuJ5b9v3t/VP9TCcoIQJncq9sC8T6kTOnae7S5YeVCoZCBue7VyxqDdSGZBlbMp+/KBCDIZHcGA0w0r/cQ==",
+  "_location": "/angular-bootstrap-md",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-bootstrap-md",
+    "name": "angular-bootstrap-md",
+    "escapedName": "angular-bootstrap-md",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-bootstrap-md/-/angular-bootstrap-md-5.2.2.tgz",
+  "_shasum": "9554dbe65aa99d092a2763f2d712246286abc101",
+  "_spec": "angular-bootstrap-md",
+  "_where": "/Users/chris1/Desktop/Projects/Cryp",
+  "author": {
+    "name": "MDBootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/mdbootstrap/bootstrap-material-design/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "moment": "2.18.x"
+  },
+  "deprecated": false,
+  "description": "Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.",
+  "homepage": "https://mdbootstrap.com",
+  "keywords": [
+    "material",
+    "design",
+    "bootstrap",
+    "mdbootstrap",
+    "mdb",
+    "framework",
+    "css",
+    "mobile-first",
+    "responsive",
+    "angular",
+    "ng",
+    "ng2",
+    "angular2",
+    "ng4",
+    "angular4",
+    "ng5",
+    "angular5"
+  ],
+  "license": "MIT",
+  "name": "angular-bootstrap-md",
+  "peerDependencies": {
+    "@angular/animations": "5.0.0 - 5.2.6",
+    "@angular/common": "5.0.0 - 5.2.6",
+    "@angular/compiler": "5.0.0 - 5.2.6",
+    "@angular/core": "5.0.0 - 5.2.6",
+    "@angular/forms": "5.0.0 - 5.2.6",
+    "chart.js": "2.5.x",
+    "hammerjs": "2.0.x",
+    "font-awesome": "4.7.x",
+    "@agm/core": "~1.0.0-beta.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdbootstrap/Angular-Bootstrap-with-Material-Design.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "5.2.2"
+}

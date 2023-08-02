@@ -1,0 +1,245 @@
+@media only screen and (min-width:1200px){
+	
+ }
+/* (min-width:992px) (max-width:1199px) */
+@media only screen and (max-width:1199px){
+	
+}
+@media only screen and (max-width:992px){
+	nav.navbar.bootsnav .navbar-toggle {padding: 5px;}
+	nav.navbar.bootsnav .navbar-nav li.active > a {border: transparent;}
+	nav.navbar.bootsnav .navbar-nav > li > a {border: none;}
+}
+/* (min-width:768px) (max-width:991px) */
+@media only screen and (max-width:991px){
+	/* Demo section */
+	.demo_header {
+		background: url(../demo-img/demo_header.html) 50% 50% no-repeat;
+			background-size: auto auto;
+		padding: 40px 0 !important;
+		height: auto;
+		background-size: cover;
+	}
+	
+	/* Home section */
+	#banner-text{ margin-top:0px !important; text-align:center; margin-bottom:150px;}
+	.home-buttons {
+		float: none !important;
+	}
+	.home-buttons button{ float:none !important;}
+	#home-iphone-carousel{ text-align:center;}
+	#home-iphone-carousel {
+		float: none !important;
+		margin: 0 auto;
+		position: relative !important;
+	}
+	#home-iphone-carousel .carousel {
+		margin-top: 0 !important; 
+		margin-left: 19px;
+	}
+	#home-iphone-carousel .carousel-inner{     top: 73px; left:19px; position: relative;}	
+	
+	.indicator-iphone-gallery {    margin-top: 0 !important;    bottom: -167px !important;}
+	
+	/* Scroll To About */	
+	#scrollToAbout{display: block;}
+	
+	/* About section */
+	.about-img{ margin:100px 0;}
+	.bottom-align-text{    		text-align: left;		margin-top: 0 !important;		}
+		.counter-content.border{ border-right:none !important;  border-bottom:1px solid #cdd2dd;}
+	
+	
+	/* App */
+	.app-showcase{     width: 46% !important;
+    float: left;
+    margin: 10px !important;}
+
+	
+	/* Features */
+	.features-image{ margin-top:50px;}
+	
+	/* Price */
+	.price{ margin-top:50px;}
+	.price:nth-child(1){ margin-top:0px;}
+	
+	/* Teams */	
+.teams .hover-style h3 {
+	font-size:24px !important;
+}
+.teams .hover-style h5 {
+	font-size: 14px !important;
+}
+.teams .hover-style .team-social-links a {
+    font-size: 14px !important;
+    margin: 5px !important;
+}
+	 
+	 /* Blogs */
+	 .blog{ margin-bottom:30px ; float: left;}
+	
+	
+	/* Footer */
+	.copyrights {margin-top:30px;}
+	
+	
+}
+@media only screen and (max-width:800px){
+}
+/* (min-width:480px) (max-width:767px) */
+@media only screen and (max-width:767px){
+	.section_title h3:before {
+		   display:none !important;
+	}
+	.section_title h3:after {
+		   display:none !important;
+	}
+	
+	.nav-tabs{ display:none;}
+	.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    width: 33.3333333%;
+	}
+	
+	/* App */
+	.app-showcase {
+    width: 45% !important;
+    float: left;
+    margin: 10px !important;
+}
+.hover-style h3{font-size: 16px;padding: 5px;}
+.hover-style h5{font-size: 14px !Important;}
+.hover-style .showcase-links a{margin: 5px !important;}
+	
+	/* Review */
+
+	.reviewsetup .item.active .img{ margin:0 auto; margin-bottom: 30px; width:30% !important; }
+	.reviewsetup .item.active .img img {margin:0 auto; }
+	.reviewsetup .item .reviewbox .content{ text-align: center;}
+	.reviewsetup .item.active{width:100% !important;}
+	.reviewsetup .item.active div{margin-top: 0;padding: 10px;width: 100%;text-align: center;padding-top: 10px;}
+	.reviewsetup .item{width:0 !important;}
+	.reviewsetup .item.active .img img {
+    margin-top: -20px !important;
+    float: left;
+    position: relative;
+    bottom: -20px !important;
+}
+
+/* Teams */	
+.teams .hover-style{ padding:10px !important;}
+.teams .hover-style h3 {
+	font-size:14px !important;
+}
+.teams .hover-style h5 {
+	font-size: 12px !important;
+}
+.teams .hover-style .team-social-links a {
+    font-size: 12px !important;
+    margin: 2px !important;
+}
+	#next-team{     margin-top: 0px; margin-right:30px;
+    position: relative;    z-index: 2;}
+#prev-team{margin-top: 0px; margin-left:30px;
+    position: relative;}
+	
+	/* Contact */
+	.contact-form .mt30{ margin-top:0;}
+	.contact-form .textbox{ margin-top:30px;}
+	.contact-form button{ margin-top:30px;}
+	
+	
+	
+}
+@media only screen and (max-width:630px){
+
+	/* App */
+	.app-showcase {
+    width: 44% !important;
+    float: left;
+}
+.hover-style h3{font-size: 12px;padding: 5px;}
+.hover-style h5{font-size: 12px !Important;}
+.hover-style .showcase-links a{ margin: 5px !important;}
+	
+	
+}
+@media only screen and (max-width:560px){
+	.android-btn{ margin-bottom:20px !important; }
+	.home-btn button{margin-right:0 !important;}
+	
+	
+	
+}
+
+	
+
+/* (min-width:361px) (max-width:479px) */
+@media only screen and (max-width:479px){
+	
+	.nav-tabs>li{width:50%;}
+	
+	/* App */
+	.app-showcase {
+    width: 100% !important;
+    float: left;
+}
+.hover-style h3{font-size: 16px;padding: 5px;}
+.hover-style h5{font-size: 14px !Important;}
+.hover-style .showcase-links a{ margin: 25px !important;}
+	
+	
+	/* Teams */	
+.teams .hover-style{ padding:10px !important;}
+.teams .hover-style h3 {
+	font-size:14px !important;
+}
+.teams .hover-style h5 {
+	font-size: 10px !important;
+}
+	.teams .hover-style .team-social-links a {
+    font-size: 14px !important;
+    margin: 1px !important;
+}
+	
+	
+
+}
+@media only screen and (max-width:400px){
+
+
+	
+}
+/* (min-width:321px) (max-width:360px) */
+@media only screen and (max-width:360px){
+#home-iphone-carousel{
+background: url(../images/home/iphone-mob.png) !important;
+    width: 270px !important;
+    height: 550px !important;
+    margin:  0 auto auto;
+	    float: right;
+}
+#home-iphone-carousel .carousel-inner  {
+    margin-top: 0 !important;
+    left: 17px !important;
+    width: 87.5% !important;
+	top: 64px !important;
+}
+.indicator-iphone-gallery {
+    margin-top: 0 !important;
+    bottom: -150px !important;
+}
+.large-title {
+    font-weight: 900;
+    font-size: 30px !important;
+}
+.section-text h3{font-weight: 900;    font-size: 30px !important;}
+
+
+
+
+}
+@media only screen and (max-width:320px){
+	
+}

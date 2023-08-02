@@ -1,0 +1,77 @@
+{
+  "_from": "angular-q-extras",
+  "_id": "angular-q-extras@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-RmEUR8ojZfuh4QJAoc6Eo9243g31ZvxKdXl6Noq9WSl6EyVdEn/6zTbr5H/KBxkOi0QMIx+gKp+Hcecy85B53w==",
+  "_location": "/angular-q-extras",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-q-extras",
+    "name": "angular-q-extras",
+    "escapedName": "angular-q-extras",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-q-extras/-/angular-q-extras-1.1.1.tgz",
+  "_shasum": "9ce50a3abcc1746ed423537d3133299db4b32836",
+  "_spec": "angular-q-extras",
+  "_where": "/Users/user/Desktop/Projects/Gazellia Ventures/Platform/App",
+  "angularVersions": [
+    "1.2",
+    "1.3",
+    "1.4",
+    "1.5",
+    "1.6",
+    "1.7"
+  ],
+  "author": {
+    "name": "niqdev"
+  },
+  "bugs": {
+    "url": "https://github.com/niqdev/angular-q-extras/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Angular $q decorator",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.0",
+    "grunt-karma": "^2.0.0",
+    "jasmine-core": "^3.2.1",
+    "jit-grunt": "^0.10.0",
+    "karma": "^3.0.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-jasmine-matchers": "^3.8.3",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "npm-install-version": "^6.0.2"
+  },
+  "homepage": "https://github.com/niqdev/angular-q-extras#readme",
+  "keywords": [
+    "angular",
+    "$q",
+    "promise",
+    "allSettled"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "angular-q-extras",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niqdev/angular-q-extras.git"
+  },
+  "scripts": {
+    "start": "grunt build",
+    "test": "grunt test"
+  },
+  "version": "1.1.1"
+}

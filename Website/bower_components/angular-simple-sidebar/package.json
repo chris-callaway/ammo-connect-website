@@ -1,0 +1,70 @@
+{
+  "_from": "angular-simple-sidebar",
+  "_id": "angular-simple-sidebar@1.3.1",
+  "_inBundle": false,
+  "_integrity": "sha1-tz9pj02GumctS5qbshc3AhvUkMA=",
+  "_location": "/angular-simple-sidebar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-simple-sidebar",
+    "name": "angular-simple-sidebar",
+    "escapedName": "angular-simple-sidebar",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-simple-sidebar/-/angular-simple-sidebar-1.3.1.tgz",
+  "_shasum": "b73f698f4d86ba672d4b9a9bb21737021bd490c0",
+  "_shrinkwrap": {
+    "name": "angular-simple-sidebar",
+    "version": "1.3.1",
+    "dependencies": {
+      "angular": {
+        "version": "1.5.10",
+        "from": "angular@1.5.10",
+        "resolved": "https://registry.npmjs.org/angular/-/angular-1.5.10.tgz"
+      }
+    }
+  },
+  "_spec": "angular-simple-sidebar",
+  "_where": "/Users/chris1/Desktop/Projects/Cryp",
+  "author": {
+    "name": "secanis.ch"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "angular": "1.5.10"
+  },
+  "deprecated": false,
+  "description": "A simple AngularJS Directive to generate a sidebar with a hamburger menu.",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "lite-server": "^2.2.0"
+  },
+  "homepage": "https://bitbucket.org/secanis/angular-simple-sidebar#readme",
+  "keywords": [
+    "angular",
+    "sidebar",
+    "hamburger"
+  ],
+  "license": "MIT",
+  "name": "angular-simple-sidebar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://matthias_baldi@bitbucket.org/secanis/angular-simple-sidebar.git"
+  },
+  "scripts": {
+    "start": "lite-server"
+  },
+  "version": "1.3.1"
+}

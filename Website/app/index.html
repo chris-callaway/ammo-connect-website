@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-colpatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ammo Connect</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Bootstrap -->
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css" />
+  <link href="styles/vendors/nprogress/nprogress.css" rel="stylesheet">
+  <link href="styles/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <link href="styles/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <link href="styles/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+  <link href="styles/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="styles/angular-simple-sidebar.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/angular-circular-slider.css">
+  <link href="styles/custom.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href="styles/datepicker.css" rel="stylesheet">
+  <link href="styles/angular-material.min.css" rel="stylesheet">
+  <link href="styles/angular-material.layouts.min.css" rel="stylesheet">
+  <link href="styles/angular-material.layouts-attributes.min.css" rel="stylesheet">
+  <link href="styles/intro.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/pure-table.css">
+
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/responsive.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <!-- endbuild -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.col/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.col/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-init="$root.isMobile()" ng-app="doctorsChoicePharmacyApp"
+  ng-class="(fullBodyBg == true) ? 'full-body-bg nav-md' : 'nav-md'">
+  <div class="wrapper">
+    <div class="page-preloader"></div>
+
+    <div ng-view="" class="other" role="main">
+
+
+    </div>
+    <!-- ============= MOBILE VIEW ============= -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <div class="footer-social">
+              <h3 class="font-black">Follow us</h3>
+              <ul class="footer-socials">
+                <li>
+                  <div class="social"><a href="#" target="_blank"
+                      class="btn btn-small hvr-bounce-to-right wow fadeIn fb"><i class="fa fa-facebook"></i></a></div>
+                </li>
+                <li>
+                  <div class="social"><a href="#" target="_blank"
+                      class="btn btn-small hvr-bounce-to-right wow fadeIn twit"><i class="fa fa-twitter"></i></a></div>
+                </li>
+                <li>
+                  <div class="social"><a href="#" target="_blank"
+                      class="btn btn-small hvr-bounce-to-right wow fadeIn goog"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12 copyrights">
+            <h4>Copyrights © 2019 Ammo Connect all rights reserved.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="scrollToTop" style="display: inline;"><span class="fa fa-angle-up"></span></a>
+  </div>
+
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-dynamic-number/release/dynamic-number.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+  <script src="scripts/sanitize.js"></script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/bootstrap-ui.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/custom.js"></script>
+  <script src="scripts/wow.min.js"></script>
+  <script src="scripts/signature-pad.js"></script>
+  <script src="scripts/ng-file-upload.min.js"></script>
+  <script src="scripts/intro.js"></script>
+  <script src="scripts/angular-intro.js"></script>
+  <script src="scripts/angular-drag-drop.min.js?v=2"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+  <script src="scripts/angular-circular-slider.js"></script>
+  <script src="http://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+  <script src="scripts/angular-simple-sidebar.min.js"></script>
+  <script src="scripts/pdfmake.js"></script>
+  <script src="scripts/html2canvas.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/login.js"></script>
+  <script src="scripts/controllers/register.js"></script>
+  <script src="scripts/controllers/helper-dialog.js"></script>
+  <script src="scripts/controllers/admin-dashboard.js"></script>
+  <script src="scripts/controllers/forgot-password.js"></script>
+  <script src="scripts/controllers/user-dashboard.js"></script>
+  <script src="scripts/controllers/home.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/modal.js"></script>
+  <script src="scripts/controllers/controller-gateway.js"></script>
+  <script src="scripts/moment.js"></script>
+  <script src="scripts/moment-timezone-with-data.min.js"></script>
+  <script src="scripts/moment-duration-format.min.js"></script>
+  <script src="scripts/helper.js"></script>
+  <!-- endbuild -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148358388-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-148358388-1');
+
+  </script>
+
+</body>
+
+</html>

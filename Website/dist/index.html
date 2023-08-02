@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles/main.52491928.css">
+</head>
+<body ng-init="$root.isMobile()" ng-app="doctorsChoicePharmacyApp"
+      ng-class="(fullBodyBg == true) ? 'full-body-bg nav-md' : 'nav-md'"
+      style="background: #fff;">
+<div ng-show="$root.isLoading" class="black-overlay"></div>
+<div ng-cloak
+     ng-class="($root.mobileActive == true) ? 'mobile-active container body': 'container body'">
+    <div class="main_container">
+
+        <!-- top navigation -->
+        <div class="top_nav" ng-show="loggedIn">
+
+            <div class="nav_menu">
+                <img style="float: left;max-height: 57px;margin-left: 100px;" src="img/jsaa_logo.png" alt="logo"
+                     height="80">
+                <nav>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li uib-dropdown class="dropdown">
+                            <a uib-dropdown-toggle href="javascript:;" class="user-profile dropdown-toggle"
+                               data-toggle="dropdown">
+
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul uib-dropdown-menu class="dropdown-menu">
+                                <li ng-click="$root.logOut()">
+                                    <a href="./#!/">
+                                        <i class="fa fa-sign-out pull-right"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div ng-show="$root.isLoading">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="loading-text" ng-bind="$root.loadingText"></div>
+        </div>
+
+        <div ng-if="$root.mobileActive" style="height: 80px; width: 100%; opacity: 0; background:transparent;"></div>
+
+        <div class="row container"
+             style="margin: auto;float:none; background: #233572; padding: 10px; padding-left: 20px; padding-right: 20px;">
+            <div style="max-width: 1200px; margin: auto;">
+                <h2 style="text-align: left;color: #fff; font-weight: 300; font-size: 18px;">Ammo Connect</h2>
+            </div>
+        </div>
+
+
+        <div id="view" ng-view="" class="other" role="main">
+            <div ng-show="$root.isLoading" class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="right_col" role="main">
+            </div>
+        </div>
+
+        <!-- ============= MOBILE VIEW ============= -->
+
+        <div id="bottom-nav" ng-show="$root.mobileActive && loggedIn" ng-init="$root.mobileView = 'initial'">
+            <div class="col-xs-12 navbar-inverse navbar-fixed-bottom">
+                <div class="row" id="bottomNav">
+                    <div my-touchend="$root.mobileView = 'deployments'" ng-click="$root.mobileView = 'initial'"
+                         class="col-xs-3 text-center nav-cell">
+                        <i class="glyphicon glyphicon-circle-arrow-down"></i><br>Initial List Item
+                    </div>
+                    <div my-touchend="$root.mobileView = 'generator'" ng-click="$root.mobileView = 'generator'"
+                         class="col-xs-3 text-center nav-cell">
+                        <i class="glyphicon glyphicon-circle-arrow-down"></i><br>List Item 2
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- /page content -->
+</div>
+</div>
+
+
+<script src="scripts/vendor.54264d65.js"></script>
+<script src="scripts/scripts.29169c1c.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="container" style="max-width: 100%; width: 1400px; background-color: #233572; padding-top: 0px; color: #333">
+
+    <div class="row" style="max-width: 1200px; margin: auto;float:none; background: #fff; padding-bottom: 80px">
+        <div class="col-xs-12">
+            <h2 style="text-align: center" class="main-color-text">GV Dashboard</h2>
+
+            <div style="clear: both; height: 40px"></div>
+            <div ng-repeat="item in modules" class="col-xs-12 col-sm-4">
+                <div class="dashboard-item" ng-click="$root.changePage('/' + item.path)">
+                    <p><span class="glyphicon glyphicon-user"></span><br>{{item.name}}</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="dashboard-item" ng-click="$root.logOut()">
+                    <p><span class="glyphicon glyphicon-search"></span><br>Log Out</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12" style="height: 400px">&nbsp;</div>
+    </div>
+</div>

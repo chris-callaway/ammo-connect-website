@@ -1,0 +1,865 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+html, body {
+  font-family: 'Open Sans';
+}
+
+.clear {
+  width: 100%;
+  height: 50px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  .col-lg-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+hr {
+  border-top: 0px;
+  border-bottom: 1px dashed #666666;
+  background: transparent;
+  border-height: 1px;
+  border-width: 2px;
+  max-width: 50px;
+}
+
+/*///////////NAVBAR\\\\\\\\\\*/
+
+.navbar-default {
+  border: none;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 10px;
+  margin: 0px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  .nav > li > a {
+    padding: 5px !important;
+    margin: 5px 10px !important;
+    text-shadow: 0px 1px 1px #313131;
+    color: #313131;
+  }
+  .sign-up a {
+    background: #337ab7;
+    color: #eee !important;
+  }
+}
+
+.navbar-brand {
+  padding: 10px 15px 10px 30px !important;
+  img {
+    max-width: 6em;
+  }
+  .navbar-form {
+    padding: 0 !important;
+  }
+}
+
+.white-bg {
+  background: #eee !important;
+  box-shadow: 5px 1px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*//////////////NAVBAR END\\\\\\\\\\*/
+/*/////////////////////Jumbotron Start\\\\\\\\\\\\*/
+
+.jumbotron {
+  background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.5) 100%), url("./../../img/Blueprint.png");
+  text-align: center;
+  color: #333;
+  width: 100%;
+  height: 750px;
+  position: relative;
+  border-radius: 0px !important;
+  margin-bottom: 0px;
+  .head-logo {
+    max-width: 25%;
+    margin: 150px auto 0px auto;
+  }
+  h1 {
+    font-family: 'Open Sans';
+    margin-top: 25px;
+    font-size: 3em;
+    color: #313131;
+  }
+  h2 {
+    font-family: 'Open Sans';
+    margin-top: 25px;
+    font-size: 2.5em;
+    color: #313131;
+  }
+  .jumbo-btn {
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    min-width: 160px;
+    margin: 0px 5px;
+  }
+}
+
+/*/////////////////////jumbotron END\\\\\\\\\\\\*/
+/*/////////////////////Why blueprint START\\\\\\\\\\\\*/
+
+.why {
+  background: #282828;
+  position: relative;
+  color: #eee;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  h2 {
+    font-size: 2.7em;
+  }
+  .glyphicon {
+    font-size: 4em !important;
+  }
+  .why-box {
+    img {
+      height: 6em;
+    }
+    p {
+      width: 45%;
+      margin: auto;
+      font-size: .8em;
+      color: #aaa;
+    }
+  }
+}
+
+/*/////////////////////Why blueprint END\\\\\\\\\\\\*/
+/*/////////////////////about us \\\\\\\\\\\\*/
+
+.about-us {
+  border-bottom: 2px dashed #b3b3b3;
+  img {
+    width: 45%;
+  }
+}
+
+/*/////////////////////about us END\\\\\\\\\\\\*/
+/*/////////////////////Services \\\\\\\\\\\\*/
+
+.services .service-box {
+  i {
+    border: 1px dashed #b3b3b3;
+    padding: 20px;
+    border-radius: 50%;
+    color: #b3b3b3;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: #666666;
+  }
+}
+
+.service-slider {
+  background: #313131;
+  color: #b3b3b3;
+  .service-btn {
+    padding: 5px 10px;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #b3b3b3;
+    text-transform: uppercase;
+    margin: 0px 5px;
+  }
+}
+
+/*/////////////////////Services  END\\\\\\\\\\\\*/
+/*/////////////////////skills \\\\\\\\\\\\*/
+
+.skills i {
+  border: 1px dashed #b3b3b3;
+  padding: 20px;
+  border-radius: 50%;
+  color: #b3b3b3;
+}
+
+/*/////////////////////skills END\\\\\\\\\\\\*/
+/*/////////////////////trial \\\\\\\\\\\\*/
+
+.trial {
+  background: #eee;
+  img {
+    width: 75%;
+  }
+  i {
+    border: 1px dashed #b3b3b3;
+    padding: 20px;
+    border-radius: 50%;
+    color: #b3b3b3;
+  }
+}
+
+/*/////////////////////trial END\\\\\\\\\\\\*/
+/*/////////////////////choose \\\\\\\\\\\\*/
+
+.choose i {
+  border: 1px dashed #b3b3b3;
+  padding: 20px;
+  border-radius: 50%;
+  color: #b3b3b3;
+}
+
+/*/////////////////////choose END\\\\\\\\\\\\*/
+/*/////////////////////Stats\\\\\\\\\\\\*/
+
+.stats-wrapper {
+  border: 1px dashed #666666;
+}
+
+/*/////////////////////Stats  END\\\\\\\\\\\\*/
+/* /////////////////////////\\\\\\\\\\\\\\*/
+/* /////////////////////////Process\\\\\\\\\\\\\\*/
+
+.process {
+  background: #313131;
+  color: #b3b3b3;
+  .process-steps {
+    h2 {
+      padding: 15px 25px;
+      border: 1px solid #b3b3b3;
+      background: #313131;
+      border-radius: 50%;
+      display: inline;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+  }
+  hr {
+    border-bottom: 2px solid #666666 !important;
+    max-width: 75% !important;
+    position: relative !important;
+    top: 18px !important;
+    margin: 0px auto !important;
+  }
+}
+
+/* /////////////////////////Process end\\\\\\\\\\\\\\*/
+/* /////////////////////////Companies \\\\\\\\\\\\\\*/
+
+.companies {
+  .company-logos img {
+    width: 100%;
+    height: auto;
+  }
+  input[type="text"] {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 20px;
+  }
+  button {
+    padding: 10px;
+    font-size: 1.4em;
+  }
+}
+
+/* /////////////////////////Companies end\\\\\\\\\\\\\\*/
+/* /////////////////////////Contact\\\\\\\\\\\\\\*/
+
+.contact {
+  background: #313131;
+  color: #b3b3b3;
+  border-bottom: 1px solid #666666;
+  input[type="text"] {
+    background: #282828;
+    margin: 5px;
+    height: 3em;
+    border: none;
+    text-transform: uppercase;
+  }
+  textarea {
+    background: #282828;
+    margin: 5px;
+    height: 6em;
+    border: none;
+    text-transform: uppercase;
+  }
+  button {
+    width: 100%;
+    margin: 5px;
+    background: #666666;
+    color: #eee;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  strong {
+    font-size: 1.1em;
+    color: #eee;
+  }
+  p {
+    font-size: .9em;
+  }
+  i {
+    padding-right: .8em;
+    font-size: 1em;
+  }
+}
+
+/* /////////////////////////Contact End\\\\\\\\\\\\\\*/
+/* /////////////////////////Footer\\\\\\\\\\\\\\*/
+
+.footer {
+  background: #313131;
+  color: #b3b3b3;
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  li {
+    padding: 8px;
+  }
+  h5 {
+    margin: 0px;
+    font-size: 1em;
+    color: #e6e6e6;
+  }
+  .fa-newspaper-o {
+    font-size: 3em;
+  }
+  p {
+    font-size: .8em;
+  }
+  hr {
+    border-bottom: 1px dashed #b3b3b3;
+    max-width: 100%;
+    margin: 5px auto;
+  }
+  em {
+    font-size: 1.4em;
+    padding: 3px;
+    font-style: normal;
+  }
+  strong, i {
+    font-size: 1.1em;
+    color: #eee;
+  }
+}
+
+/* /////////////////////////Footer End\\\\\\\\\\\\\\*/
+/* ////////////////////////Social Footer\\\\\\\\\\\\\\*/
+
+.social-footer {
+  background: #282828;
+  color: #b3b3b3;
+  padding: 25px;
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+  }
+}
+
+/* ////////////////////////Social Footer End\\\\\\\\\\\\\\*/
+
+/* Sign Up Form */
+
+/* form styling */
+
+#form-container {
+  background: #eee;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  position: relative;
+  .page-header {
+    background: #eee;
+    margin: 0;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+/* numbered buttons */
+
+#status-buttons {
+  a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  span {
+    background: #080808;
+    display: block;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding-top: 5px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  a.active span {
+    background: #00BC8C;
+  }
+}
+
+/* active buttons */
+
+/* ANIMATION STYLINGS
+============================================================================= */
+
+#signup-form {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+
+#form-views {
+  &.ng-enter, &.ng-leave {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+  }
+  &.ng-enter {
+    -webkit-animation: slideInRight 0.5s both ease;
+    -moz-animation: slideInRight 0.5s both ease;
+    animation: slideInRight 0.5s both ease;
+  }
+  &.ng-leave {
+    -webkit-animation: slideOutLeft 0.5s both ease;
+    -moz-animation: slideOutLeft 0.5s both ease;
+    animation: slideOutLeft 0.5s both ease;
+  }
+}
+
+/* enter animation */
+
+/* leave animation */
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+.below-header {
+  padding-top: 90px;
+}
+
+.clearfix {
+  height: 20px;
+}
+
+.spacer {
+  height: 10px;
+}
+
+.step-input {
+  max-width: 350px;
+}
+
+.social-login-btn {
+  max-width: 250px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Loader */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 2s linear infinite;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  opacity: 0.5;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+/* Admin */
+
+.dark-bg {
+  background: #313131;
+}
+
+.light-bg {
+  background: #666666;
+}
+
+.extra-light-bg {
+  background: #eee;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.white {
+  color: #fff;
+}
+
+.light-grey {
+  color: #b3b3b3;
+}
+
+.dark-grey {
+  color: #666666;
+}
+
+p {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.sidebar-header {
+  font-size: 18px;
+}
+
+.admin-sidebar-menu-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  i {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  &.active {
+    color: #fff;
+    i {
+      color: #fff;
+    }
+  }
+  color: #b3b3b3;
+  font-size: 18px;
+  i {
+    color: #b3b3b3;
+    font-size: 18px;
+  }
+}
+
+.full-height {
+  overflow: hidden;
+  min-height: 100%;
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
+}
+
+.center {
+  margin: auto;
+  display: block;
+}
+
+.number-input {
+  max-width: 65px;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.captialize {
+  text-transform: capitalize;
+}
+
+.user-message {
+  float: right;
+  clear: both;
+  background-color: #008000;
+}
+
+.receiver-message {
+  float: left;
+  clear: both;
+  background-color: #0055b3;
+}
+
+.chat-thread {
+  padding-left: 0px;
+}
+
+li.clear {
+  clear: both;
+  height: 10px;
+}
+
+.chat-thread li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 5px 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.send-message-button {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.thumbnail {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.match-good {
+  border: 1px solid yellow;
+}
+
+.match-better {
+  border: 1px solid blue;
+}
+
+.match-best {
+  border: 1px solid green;
+}
+
+.filters li {
+  list-style-type: none;
+}
+
+/* CSS goes here */
+
+.slider {
+  position: relative;
+  text-align: left;
+  border: 1px solid gray;
+  height: 0.6em;
+}
+
+.slider .handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: gray;
+}
+
+.handle {
+  top: -0.3em;
+  margin-left: -0.6em;
+}
+
+.slider .range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  font-size: .7em;
+  background-color: red;
+  top: 0;
+  height: 100%;
+}
+
+/*! The MIT License (MIT)
+
+Copyright (c) 2015 Prince John Wesley <princejohnwesley@gmail.com>
+**/
+
+.acs-slider {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.acs-panel {
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.acs {
+  position: relative;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: hotpink;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.acs-value {
+  position: absolute;
+  border-style: none;
+  border-radius: 100%;
+  border: 2px solid rgb(236, 248, 212);
+  text-align: center;
+  pointer-events: none;
+  line-height: 4em;
+  color: white;
+  background-color: yellowgreen;
+  outline: none;
+}
+
+.acs-indicator {
+  position: absolute;
+  border-radius: 100%;
+  background-color: deeppink;
+  border: 1px solid rgb(177, 177, 177);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.acs-value * {
+  border-radius: 100%;
+  background: transparent;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.aligned td {
+  vertical-align: middle !important;
+}
+
+#subscribeForm .nav-tabs > li {
+  width: 50%;
+  text-align: center;
+}
+
+.full-body-bg {
+  background: url('../img/Blueprint.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+
+.services .service-box h3 {
+  text-transform: inherit;
+  font-size: 16px;
+}

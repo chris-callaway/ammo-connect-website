@@ -1,0 +1,30 @@
+<div class="container" style="max-width: 100%; width: 1400px; background-color: #233572; padding-top: 0px; color: #333">
+
+    <div class="row" style="max-width: 1200px; margin: auto;float:none; background: #fff; padding-bottom: 80px">
+        <div class="col-xs-12">
+            <h2 style="text-align: center" class="main-color-text">Report Parser</h2>
+
+            <div style="clear: both; height: 40px"></div>
+            <div class="col-xs-12 col-sm-4">
+                <div>
+                    <label>PDF File(s)</label>
+                    <input type="file" select-ng-files ng-model="pdfFiles" multiple="multiple" class="form-control">
+                </div>
+            </div>
+            <div style="clear: both; height: 40px"></div>
+            <div class="col-xs-12 col-sm-4">
+                <md-input-container style="margin-bottom: 0">
+                    <label for="date">Date</label>
+                    <input ng-required="true" tabindex="2" type="text" name="Date" ng-model="reportDate" id="reportDate">
+                </md-input-container>
+            </div>
+        </div>
+        <div style="clear: both; height: 40px"></div>
+
+        <div class="col-xs-12" style="padding-top: 20px; padding-bottom: 40px; margin-left: auto; margin-right: auto; display: block; border: none; text-align: center; background: #fff">
+            <md-button tabindex="20" class="md-primary md-raised" type="submit" ng-click="submitFiles()" style="width: 200px; margin: auto">Submit
+            </md-button>
+        </div>
+        <div class="col-xs-12" style="height: 400px">&nbsp;</div>
+    </div>
+</div>
